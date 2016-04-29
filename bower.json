@@ -19,6 +19,10 @@
   },
   "devDependencies": {
     "bootstrap": "^3.3.6",
-    "angular": "angularjs#^1.5.5"
+    "angular": "angularjs#^1.5.5",
+    "angular-filters": "^1.1.2"
+  },
+  "resolutions": {
+    "angular": "^1.5.5"
   }
 }

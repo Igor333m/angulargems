@@ -13,19 +13,22 @@
     <script src="js/app.js" type="text/javascript"></script>
 </head>
 <body>
-	<div class="container" ng-controller = "GemController as gem">
-		<div class="row">
-			<div class="col-xs-12 col-sm-6 col-lg-4" ng-repeat="product in gem.gems">
-				<div class="media paddingtop">
-					<div class="media-left">
-						<img class="media-object" ng-attr-src="{{ product.source }}" alt="Ruby gemstone">
-					</div>
-					<div class="media-body">
-						<h3 class="media-heading">{{ product.name }}
-							<span class="label label-primary label-xs">{{ product.price }}</span>
-						</h3>
-						<p>{{ product.description }}</p>
-						<button type="button" class="btn btn-primary" ng-show="product.canPurchase">Buy</button>
+	<div class="container">
+		<div class="row" ng-controller = "GemController as gem">
+			<div ng-repeat="product in gem.gems">
+				<div class="clearfix visible-lg" ng-if="$index % 3 == 0"></div>
+				<div class="col-xs-12 col-sm-6 col-lg-4">
+					<div class="media paddingtop">
+						<div class="media-left">
+							<img class="media-object" ng-attr-src="{{ product.source }}" alt="Ruby gemstone">
+						</div>
+						<div class="media-body">
+							<h3 class="media-heading">{{ product.name }}
+								<span class="label label-primary label-xs">{{ product.price }}</span>
+							</h3>
+							<p>{{ product.description }}</p>
+							<button type="button" class="btn btn-primary center-block" ng-show="product.canPurchase">Buy</button>
+						</div>
 					</div>
 				</div>
 			</div>

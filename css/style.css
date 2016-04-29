@@ -1,5 +1,6 @@
 p {
 	font-family: 'lato', 'helvetica', sans-serif;
+	// border: solid red 1px;
 }
 
 .paddingtop{
@@ -8,4 +9,14 @@ p {
 
 img[src] {
 	width: 120px;
+}
+
+@media (max-width: 400px) {
+	img[src] {
+	width: 60px;
+	}
+}
+.media-body > p {
+	// height: 400px;
+	// overflow-y: scroll;
 }
