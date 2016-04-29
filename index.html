@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="GemStore">
+<html lang="en" ng-app="gemStore">
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,26 +8,50 @@
 	
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="js/app.js" type="text/javascript"></script>
 </head>
 <body>
 	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-sm-3">
-				<h1>Hello World</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam maxime fugiat adipisci placeat fugit? Ipsam veritatis optio dolorum porro magni hic fugiat perferendis esse beatae, labore, atque, ipsa sit! Consequatur.</p>
-				<p>I am {{30 + 2}}</p>
+		<div class="row" ng-controller = "GemController as gem">
+			<div class="col-xs-12 col-sm-6 col-lg-4">
+				<div class="media paddingtop">
+					<div class="media-left">
+						<img class="media-object" ng-attr-src="{{ gem.ruby.source }}" alt="Ruby gemstone">
+					</div>
+					<div class="media-body">
+						<h2 class="media-heading">{{ gem.ruby.name }}</h1>
+						<p>{{ gem.ruby.description }}</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-lg-4">
+				<div class="media paddingtop">
+					<div class="media-left">
+						<img class="media-object" ng-attr-src="{{ gem.sapphire.source }}" alt="Sapphire gemstone">
+					</div>
+					<div class="media-body">
+						<h2 class="media-heading">{{ gem.sapphire.name }}</h1>
+						<p>{{ gem.sapphire.description }}</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-lg-4">
+				<div class="media paddingtop">
+					<div class="media-left">
+						<img class="media-object" ng-attr-src="{{ gem.emerald.source }}" alt="Emerald gemstone">
+					</div>
+					<div class="media-body">
+						<h2 class="media-heading">{{ gem.emerald.name }}</h1>
+						<p>{{ gem.emerald.description }}</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-	<!-- jquery test -->
-	<script>
-		$("h1").text("Hello jQuery World");
-
-	</script>
 </body>
 </html>
