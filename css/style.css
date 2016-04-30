@@ -5,7 +5,7 @@ p {
 
 .paddingtop{
 	padding: 30px;
-	border: solid red 1px;
+	// border: solid red 1px;
 }
 
 img[src] {
