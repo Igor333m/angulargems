@@ -25,7 +25,7 @@
 						</div>
 						<div class="media-body">
 							<h3 class="media-heading">{{ product.name }}
-								<span class="label label-primary label-xs">{{ product.price }}</span>
+								<span class="label label-primary label-xs">{{ product.price | currency }}</span>
 							</h3>
 							<p>{{ product.description }}</p>
 							<button type="button" class="btn btn-primary center-block" ng-show="product.canPurchase">Buy {{ product.name }}</button>
