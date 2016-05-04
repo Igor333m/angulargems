@@ -1,0 +1,28 @@
+{
+  "name": "angulargems",
+  "homepage": "https://github.com/igor333m/angulargems",
+  "authors": [
+    "Igor Todorovic <igor333m@yahoo.com>"
+  ],
+  "description": "My first site using Angularjs",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.6",
+    "angular": "angularjs#^1.5.5",
+    "angular-filters": "^1.1.2"
+  },
+  "resolutions": {
+    "angular": "^1.5.5"
+  }
+}
