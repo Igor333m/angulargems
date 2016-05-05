@@ -20,8 +20,15 @@
 				<h2 class="text-center">An Angular Ring Store</h2>
 			</div>
 			<div class="col-xs-12 col-sm-2">
-				<button>Price low to high</button>
-				<button>Price high to low</button>
+				<div class="btn-group text-center">
+					<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Sort By <span class="caret"></span>
+  					</button>
+					<ul class="dropdown-menu">
+						<li><a href="#">Price Low to High</a></li>
+						<li><a href="#">price High to Low</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="row" ng-controller = "GemController as gem">
