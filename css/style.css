@@ -22,3 +22,7 @@ img[src] {
 	// overflow-y: scroll;
 }
 
+button {
+	margin: 10px;
+}
+

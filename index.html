@@ -14,8 +14,18 @@
 </head>
 <body>
 	<div id="container" class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-10">
+				<h1 class="text-center">Famous Gems</h1>
+				<h2 class="text-center">An Angular Ring Store</h2>
+			</div>
+			<div class="col-xs-12 col-sm-2">
+				<button>Price low to high</button>
+				<button>Price high to low</button>
+			</div>
+		</div>
 		<div class="row" ng-controller = "GemController as gem">
-			<div ng-repeat="product in gem.gems">
+			<div ng-repeat="product in gem.gems | orderBy: 'price'">
 				<div class="clearfix visible-lg" ng-if="$index % 3 == 0"></div>
 				<div class="clearfix visible-md" ng-if="$index % 2 == 0"></div>
 				<div class="clearfix visible-sm" ng-if="$index % 2 == 0"></div>
